@@ -21,7 +21,6 @@ const db_force = JSON.parse(String(process.env.DB_FORCE || "false").toLowerCase(
 const sequelize = new Sequelize(db_name, db_user, db_pass, {host: db_host, port:db_port, dialect: db_dialect, logging: db_logging})
 
 const app = express()
-const routes = express.Router()
 const basename = path.basename(__filename)
 
 const db = {}
@@ -41,14 +40,20 @@ Object.keys(db).forEach(modelName => {
     }
 });
 
-let apis = []
 
-fs.readdirSync(`${__dirname}/handlers`).filter(file => {
-    return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js')
-}).forEach(file => {
-    require(path.join(`${__dirname}/handlers`, file))(routes, db.sequelize)
-    apis.push(`./handlers/${file}`)
-})
+const HandlerInit = (dir) => {
+    const routes = express.Router()
+    let apis = []
+    fs.readdirSync(`${__dirname}/${dir}`).filter(file => {
+        return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js')
+    }).forEach(file => {
+        require(path.join(`${__dirname}/${dir}`, file))(routes, db.sequelize)
+        apis.push(`./${dir}/${file}`)
+    })
+    return {routes, apis}
+}
+
+const {routes:routes_v1, apis:apis_v1} = HandlerInit("handlers")
 
 app.use(express.urlencoded({
     extended: true
@@ -58,7 +63,7 @@ app.use(express.json())
 
 app.use(cors())
 
-app.use("/api/v1", routes)
+app.use("/api/v1", routes_v1)
 
 app.use((err, req, res, next) => {
     if (err.name === "UnauthorizedError") {
@@ -101,7 +106,7 @@ const swagger_option = {
             }
         },
     },
-    apis: apis,
+    apis: apis_v1,
     security: [{
         ["x-user-id"]: []
     }]

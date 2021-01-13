@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4cfb2df-af94-4d77-8e44-698a9b1e707c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/api_v1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/docs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/todo_category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/todo_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/todo_category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +91,7 @@
       <updated>1610514251056</updated>
       <workItem from="1610514252164" duration="6815000" />
       <workItem from="1610551417559" duration="57000" />
-      <workItem from="1610551729343" duration="4927000" />
+      <workItem from="1610551729343" duration="6138000" />
     </task>
     <servers />
   </component>
