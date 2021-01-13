@@ -1,4 +1,4 @@
-# Simple NodeJS-RestAPI Boilerplate with ORM and API Docs
+# Simple NodeJS-RestAPI Boilerplate with ORM, API Docs, Docker
 #### Simple Rest API with nodejs, express, sequelize (orm), swagger (API Docs), Docker
 
 ## Feature
