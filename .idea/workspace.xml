@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4cfb2df-af94-4d77-8e44-698a9b1e707c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/todo_category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/category.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/todo_category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610514251056</updated>
-      <workItem from="1610514252164" duration="5572000" />
+      <workItem from="1610514252164" duration="6815000" />
+      <workItem from="1610551417559" duration="57000" />
     </task>
     <servers />
   </component>
@@ -107,5 +107,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
