@@ -1,10 +1,11 @@
 # Simple NodeJS-RestAPI Boilerplate with ORM and API Docs
-#### Simple Rest API with nodejs, express, sequelize (orm), swagger (API Docs)
+#### Simple Rest API with nodejs, express, sequelize (orm), swagger (API Docs), Docker
 
 ## Feature
-- Auto Migrate
+- Auto Migrate (Sequelize)
 - API Docs (Swagger)
-- Unit Test
+- Unit Test (JestJS)
+- Docker Config
 
 ## Dependencies
 - dotenv
