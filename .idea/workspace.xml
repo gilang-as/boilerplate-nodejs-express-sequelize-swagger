@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4cfb2df-af94-4d77-8e44-698a9b1e707c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/todo_category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/category.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/handlers/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/todo_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/handlers/todo_category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/handlers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/api_middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/libs/api_middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/todo_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/todo_category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/usecase/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/usecase/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/todo_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/usecase/todo_category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/usecase/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +41,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/Rekeningku/frontend/rekeningku-web" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
@@ -46,8 +52,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\project\bolerplate\boilerplate-nodejs-express-sequelize-swagger\models" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\bolerplate\boilerplate-nodejs-express-sequelize-swagger\test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Jest.Category Test">
+  <component name="RunManager" selected="Node.js.index.js">
     <configuration name="Category Test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -75,8 +84,12 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/handlers/index.js" working-dir="$PROJECT_DIR$/src/handlers">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="Jest.Category Test" />
         <item itemvalue="Jest.Category Test.Add Category Test" />
       </list>
@@ -90,7 +103,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610514251056</updated>
-      <workItem from="1610514252164" duration="5572000" />
+      <workItem from="1610514252164" duration="6815000" />
+      <workItem from="1610551417559" duration="57000" />
+      <workItem from="1610551729343" duration="6381000" />
     </task>
     <servers />
   </component>
@@ -107,5 +122,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
