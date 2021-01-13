@@ -24,13 +24,13 @@ const app = express()
 const routes = express.Router()
 const basename = path.basename(__filename)
 
-const db = {};
+const db = {}
 fs.readdirSync(`${__dirname}/models`).filter(file => {
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js')
 }).forEach(file => {
     const model = require(path.join(`${__dirname}/models`, file))(sequelize, Sequelize.DataTypes)
     db[model.name] = model
-});
+})
 
 db.sequelize = sequelize
 db.Sequelize = Sequelize
@@ -66,7 +66,7 @@ app.use((err, req, res, next) => {
     } else {
         next(err);
     }
-});
+})
 
 const swagger_option = {
     swaggerDefinition:{
@@ -107,9 +107,7 @@ const swagger_option = {
     }]
 }
 
-const swaggerDoc = swaggerJsDoc(swagger_option)
-
-app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDoc))
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerJsDoc(swagger_option)))
 
 app.listen(app_port, async () =>{
     try {
