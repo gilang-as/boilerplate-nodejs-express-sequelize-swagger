@@ -1,0 +1,49 @@
+{
+  "name": "boilerplate-nodejs-restapi",
+  "version": "0.0.1",
+  "description": "Simple Rest API with nodejs, express, sequelize (orm), swagger (API Docs)",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilang-as/boilerplate-nodejs-express-sequelize-swagger.git"
+  },
+  "keywords": [
+    "Boilerplate",
+    "NodeJS",
+    "Express",
+    "Sequelize",
+    "RestAPI",
+    "API",
+    "Docs",
+    "Swagger",
+    "Auto",
+    "Migrate"
+  ],
+  "author": "Gilang Adi S <gilangas@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilang-as/boilerplate-nodejs-express-sequelize-swagger/issues"
+  },
+  "homepage": "https://github.com/gilang-as/boilerplate-nodejs-express-sequelize-swagger#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "swagger-jsdoc": "^6.0.1",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7"
+  }
+}
