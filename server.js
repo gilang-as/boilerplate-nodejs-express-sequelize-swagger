@@ -24,10 +24,10 @@ const app = express()
 const basename = path.basename(__filename)
 
 const db = {}
-fs.readdirSync(`${__dirname}/models`).filter(file => {
+fs.readdirSync(`${__dirname}/src/models`).filter(file => {
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js')
 }).forEach(file => {
-    const model = require(path.join(`${__dirname}/models`, file))(sequelize, Sequelize.DataTypes)
+    const model = require(path.join(`${__dirname}/src/models`, file))(sequelize, Sequelize.DataTypes)
     db[model.name] = model
 })
 
@@ -44,11 +44,11 @@ Object.keys(db).forEach(modelName => {
 const HandlerInit = (dir) => {
     const routes = express.Router()
     let apis = []
-    fs.readdirSync(`${__dirname}/${dir}`).filter(file => {
+    fs.readdirSync(`${__dirname}/src/${dir}`).filter(file => {
         return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js')
     }).forEach(file => {
-        require(path.join(`${__dirname}/${dir}`, file))(routes, db.sequelize)
-        apis.push(`./${dir}/${file}`)
+        require(path.join(`${__dirname}/src/${dir}`, file))(routes, db.sequelize)
+        apis.push(`./src/${dir}/${file}`)
     })
     return {routes, apis}
 }
